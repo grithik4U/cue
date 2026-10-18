@@ -1,0 +1,8 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+httpx>=0.27,<1
+python-multipart>=0.0.20,<1
+faster-whisper>=1.1,<2
+# faster-whisper 1.2.1 still passes metadata_errors to av.open; PyAV 19
+# removed that argument, which makes every transcription fail during decode.
+av>=11,<19
